@@ -9,9 +9,9 @@ export default function Search() {
   const [weather, setWeather] = useState({});
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  
-  async function fetchWeather() {
-    
+
+  async function fetchWeather(e) {
+    e.preventDefault();
     setLoading(true);
     setError("");
     try {
@@ -29,16 +29,19 @@ export default function Search() {
 
   return (
     <div className={styles.container}>
-      <input className={styles.input}
-        onChange={(e) => setCity(e.target.value)}
-        type="text"
-        placeholder="Enter the city name"
-        value={city}
-      ></input>
-      <button className={styles.button} onClick={fetchWeather}>Enter</button>
-       <WeatherInfo weather={weather} loading={loading} error={error} />
+      <div className={styles.inputSection}>
+        <input
+          className={styles.input}
+          onChange={(e) => setCity(e.target.value)}
+          type="text"
+          placeholder="Enter the city name"
+          value={city}
+        ></input>
+        <button className={styles.button} onClick={(e)=>fetchWeather(e)}>
+          Enter
+        </button>
+      </div>
+      <WeatherInfo weather={weather} loading={loading} error={error} />
     </div>
   );
 }
-
-
