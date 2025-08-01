@@ -1,7 +1,11 @@
 import Search from "./components/search";
-
-export default function App(){
-  return <div>
-    <Search/>
-  </div>;
+import "./App.css";
+import Nav from "./components/nav";
+export default function App() {
+  return (
+    <div>
+      <Nav/>
+      <Search />
+    </div>
+  );
 }

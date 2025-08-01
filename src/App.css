@@ -1,3 +1,5 @@
 body{
   margin:0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to left,#8db9f3,#c2d4e8);
 }
