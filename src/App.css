@@ -1,5 +1,9 @@
 body{
   margin:0;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(to left,#8db9f3,#c2d4e8);
+  background-image: url("C:\Users\intel\Desktop\React\weather app\public\weather.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:150%;
+  
 }

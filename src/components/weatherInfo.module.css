@@ -9,12 +9,12 @@
   max-width: 400px;
   padding: 2rem;
   margin-top: 2rem;
-  margin-left: 30rem;
-  background-color: #ffebcdb1;
+  margin-left: 35rem;
+  background-color: transparent;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  color: #1e293b;
-  font-size: 1rem;
+  color: #edeff3;
+  font-size: 1.1rem;
   box-shadow: 0 8px 16px 32px rgba(255, 255, 255, 0.2);
 }
 .Error {
